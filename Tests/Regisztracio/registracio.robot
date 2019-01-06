@@ -18,7 +18,7 @@ ${REGISTRACIO_REG_LINK} =  Regisztráció
 ${REGISTRACIO_EMAIL} =  valami@telenor.hu
 ${REGISTRACIO_ROV_JELSZO} =  aaa
 ${REGISTRACIO_JELSZO_CSAK_SZAM} =  12345678
-
+${REGISTRACIO_JELSZO_CSAK_BETU} =  asdfghjkl
 
 
 *** Test Cases ***
@@ -34,13 +34,21 @@ Regisztracio rovid jelszo
 
 Regisztracio rossz jelszo - csak szam
     [Documentation]  Regisztráció olyan jelszóval ami minimum 8 karakter, de csak számot tartalmaz
-    [Tags]  Smoke  Jelszo  Mo3
+    [Tags]  Smoke  Jelszo
     cookie.Accept cookie2
     Main page click login
     Go to registration
     Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_SZAM}
     Check thinks after give wrong password
 
+Regisztracio rossz jelszo - csak betu
+    [Documentation]  Regisztráció olyan jelszóval ami minimum 8 karakter, de csak sóbetűt tartalmaz.
+    [Tags]  Smoke  Jelszo  Mo3
+    cookie.Accept cookie2
+    Main page click login
+    Go to registration
+    Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_BETU}
+    Check thinks after give wrong password
 
 Test1
     [Tags]  Most2
