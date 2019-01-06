@@ -18,7 +18,7 @@ ${REGISTRACIO_REG_LINK} =  Regisztráció
 ${REGISTRACIO_EMAIL} =  valami@telenor.hu
 ${REGISTRACIO_ROV_JELSZO} =  aaa
 ${REGISTRACIO_JELSZO_CSAK_SZAM} =  12345678
-${REGISTRACIO_JELSZO_CSAK_BETU} =  asdfghjkl
+${REGISTRACIO_JELSZO_CSAK_KISBETU} =  asdfghjkl
 ${REGISTRACIO_JELSZO_CSAK_NAGYBETU} =  ASDFGHJKL
 
 *** Test Cases ***
@@ -50,6 +50,14 @@ Regisztracio rossz jelszo - csak Nagybetu
     Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_NAGYBETU}
     Check thinks after give wrong password
 
+Regisztracio rossz jelszo - csak kisbetu
+    [Documentation]  Regisztráció olyan jelszóval ami minimum 8 karakter, de csak kisbetűt tartalmaz.
+    [Tags]  Smoke  Jelszo2
+    cookie.Accept cookie2
+    Main page click login
+    Go to registration
+    Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_KISBETU}
+    Check thinks after give wrong password
 
 
 Test1
