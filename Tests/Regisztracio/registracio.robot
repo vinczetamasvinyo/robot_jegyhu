@@ -49,7 +49,7 @@ Regisztracio rossz jelszo - csak kisbetu
     Go to registration
     Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_BETU}
     Check thinks after give wrong password
-           
+
 Test1
     [Tags]  Most2
     ${a} =  add two string  Vincze  Tamás

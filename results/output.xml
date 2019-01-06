@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1 (Python 3.6.2 on win32)" generated="20190106 17:57:51.085" rpa="false">
+<robot generator="Robot 3.1 (Python 3.6.2 on win32)" generated="20190106 18:08:23.830" rpa="false">
 <suite id="s1" name="Registracio" source="C:\development\robot-scripts\jegyhu\tests\regisztracio\registracio.robot">
-<test id="s1-t1" name="Regisztracio rossz jelszo - csak betu">
+<test id="s1-t1" name="Regisztracio rossz jelszo - csak kisbetu">
 <kw name="Begin web test" library="Common" type="setup">
 <doc>Megnyit egy adott weboldalt a browserrel</doc>
 <arguments>
@@ -14,14 +14,14 @@
 <arg>${oldal}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190106 17:57:51.412" level="INFO">Opening browser 'chrome' to base url 'https://www.jegy.hu/'.</msg>
-<status status="PASS" starttime="20190106 17:57:51.412" endtime="20190106 17:57:56.584"></status>
+<msg timestamp="20190106 18:08:24.109" level="INFO">Opening browser 'chrome' to base url 'https://www.jegy.hu/'.</msg>
+<status status="PASS" starttime="20190106 18:08:24.109" endtime="20190106 18:08:28.995"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190106 17:57:56.584" endtime="20190106 17:57:57.748"></status>
+<status status="PASS" starttime="20190106 18:08:28.995" endtime="20190106 18:08:30.196"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:57:51.412" endtime="20190106 17:57:57.748"></status>
+<status status="PASS" starttime="20190106 18:08:24.109" endtime="20190106 18:08:30.196"></status>
 </kw>
 <kw name="Accept cookie2" library="cookie">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -29,10 +29,10 @@
 <arguments>
 <arg>${COOKIE_BUTTON_ID}</arg>
 </arguments>
-<msg timestamp="20190106 17:57:57.751" level="INFO">Clicking element 'class=accept_cookie'.</msg>
-<status status="PASS" starttime="20190106 17:57:57.751" endtime="20190106 17:57:57.896"></status>
+<msg timestamp="20190106 18:08:30.197" level="INFO">Clicking element 'class=accept_cookie'.</msg>
+<status status="PASS" starttime="20190106 18:08:30.197" endtime="20190106 18:08:30.312"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:57:57.750" endtime="20190106 17:57:57.896"></status>
+<status status="PASS" starttime="20190106 18:08:30.197" endtime="20190106 18:08:30.312"></status>
 </kw>
 <kw name="Main page click login" library="log">
 <kw name="Click Link" library="SeleniumLibrary">
@@ -40,10 +40,10 @@
 <arguments>
 <arg>${LOGIN_MAIN_PAGE_LOGIN_LINK}</arg>
 </arguments>
-<msg timestamp="20190106 17:57:57.896" level="INFO">Clicking link 'link=Bejelentkezés'.</msg>
-<status status="PASS" starttime="20190106 17:57:57.896" endtime="20190106 17:57:59.684"></status>
+<msg timestamp="20190106 18:08:30.312" level="INFO">Clicking link 'link=Bejelentkezés'.</msg>
+<status status="PASS" starttime="20190106 18:08:30.312" endtime="20190106 18:08:31.714"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:57:57.896" endtime="20190106 17:57:59.684"></status>
+<status status="PASS" starttime="20190106 18:08:30.312" endtime="20190106 18:08:31.714"></status>
 </kw>
 <kw name="Go to registration" library="registracio">
 <kw name="Click registration" library="register_page">
@@ -52,12 +52,12 @@
 <arguments>
 <arg>${REGISTER_PAGE__REG_LINK}</arg>
 </arguments>
-<msg timestamp="20190106 17:57:59.689" level="INFO">Clicking link 'Regisztráció'.</msg>
-<status status="PASS" starttime="20190106 17:57:59.689" endtime="20190106 17:58:01.217"></status>
+<msg timestamp="20190106 18:08:31.717" level="INFO">Clicking link 'Regisztráció'.</msg>
+<status status="PASS" starttime="20190106 18:08:31.716" endtime="20190106 18:08:32.880"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:57:59.688" endtime="20190106 17:58:01.217"></status>
+<status status="PASS" starttime="20190106 18:08:31.715" endtime="20190106 18:08:32.882"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:57:59.687" endtime="20190106 17:58:01.217"></status>
+<status status="PASS" starttime="20190106 18:08:31.714" endtime="20190106 18:08:32.882"></status>
 </kw>
 <kw name="Give reg data and click" library="registracio">
 <arguments>
@@ -75,8 +75,8 @@
 <arg>${REGISTER_PAGE_INPUT_EMAIL_ID}</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20190106 17:58:01.222" level="INFO">Typing text 'valami@telenor.hu' into text field 'Id=email'.</msg>
-<status status="PASS" starttime="20190106 17:58:01.221" endtime="20190106 17:58:01.693"></status>
+<msg timestamp="20190106 18:08:32.888" level="INFO">Typing text 'valami@telenor.hu' into text field 'Id=email'.</msg>
+<status status="PASS" starttime="20190106 18:08:32.887" endtime="20190106 18:08:33.117"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -84,10 +84,10 @@
 <arg>${REGISTER_PAGE__INPUT_Password_ID}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190106 17:58:01.694" level="INFO">Typing text 'asdfghjkl' into text field 'id=password1'.</msg>
-<status status="PASS" starttime="20190106 17:58:01.693" endtime="20190106 17:58:01.932"></status>
+<msg timestamp="20190106 18:08:33.118" level="INFO">Typing text 'asdfghjkl' into text field 'id=password1'.</msg>
+<status status="PASS" starttime="20190106 18:08:33.117" endtime="20190106 18:08:33.295"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:01.220" endtime="20190106 17:58:01.933"></status>
+<status status="PASS" starttime="20190106 18:08:32.886" endtime="20190106 18:08:33.295"></status>
 </kw>
 <kw name="Click reg checkbox" library="register_page">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -95,10 +95,10 @@
 <arguments>
 <arg>${REGISTER_PAGE_CHECKBOX_ID}</arg>
 </arguments>
-<msg timestamp="20190106 17:58:01.933" level="INFO">Clicking element 'class=checkbox-custom-label'.</msg>
-<status status="PASS" starttime="20190106 17:58:01.933" endtime="20190106 17:58:02.101"></status>
+<msg timestamp="20190106 18:08:33.296" level="INFO">Clicking element 'class=checkbox-custom-label'.</msg>
+<status status="PASS" starttime="20190106 18:08:33.296" endtime="20190106 18:08:33.429"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:01.933" endtime="20190106 17:58:02.102"></status>
+<status status="PASS" starttime="20190106 18:08:33.296" endtime="20190106 18:08:33.429"></status>
 </kw>
 <kw name="Click reg button" library="register_page">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -106,12 +106,12 @@
 <arguments>
 <arg>${REGISTER_PAGE_BUTTON_ID}</arg>
 </arguments>
-<msg timestamp="20190106 17:58:02.102" level="INFO">Clicking button 'Regisztráció'.</msg>
-<status status="PASS" starttime="20190106 17:58:02.102" endtime="20190106 17:58:04.575"></status>
+<msg timestamp="20190106 18:08:33.431" level="INFO">Clicking button 'Regisztráció'.</msg>
+<status status="PASS" starttime="20190106 18:08:33.430" endtime="20190106 18:08:36.196"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:02.102" endtime="20190106 17:58:04.575"></status>
+<status status="PASS" starttime="20190106 18:08:33.429" endtime="20190106 18:08:36.196"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:01.218" endtime="20190106 17:58:04.575"></status>
+<status status="PASS" starttime="20190106 18:08:32.885" endtime="20190106 18:08:36.197"></status>
 </kw>
 <kw name="Check thinks after give wrong password" library="registracio">
 <kw name="Check wrong password page" library="register_page">
@@ -133,24 +133,24 @@
 <assign>
 <var>${d}</var>
 </assign>
-<msg timestamp="20190106 17:58:04.582" level="INFO">${d} = https://www.jegy.hu/registration/doRegistration</msg>
-<status status="PASS" starttime="20190106 17:58:04.581" endtime="20190106 17:58:04.582"></status>
+<msg timestamp="20190106 18:08:36.200" level="INFO">${d} = https://www.jegy.hu/registration/doRegistration</msg>
+<status status="PASS" starttime="20190106 18:08:36.199" endtime="20190106 18:08:36.200"></status>
 </kw>
 <kw name="Get Location" library="SeleniumLibrary">
 <doc>Returns the current browser URL.</doc>
 <assign>
 <var>${c}</var>
 </assign>
-<msg timestamp="20190106 17:58:04.591" level="INFO">${c} = https://www.jegy.hu/registration/doRegistration</msg>
-<status status="PASS" starttime="20190106 17:58:04.582" endtime="20190106 17:58:04.591"></status>
+<msg timestamp="20190106 18:08:36.209" level="INFO">${c} = https://www.jegy.hu/registration/doRegistration</msg>
+<status status="PASS" starttime="20190106 18:08:36.201" endtime="20190106 18:08:36.210"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${c}</arg>
 </arguments>
-<msg timestamp="20190106 17:58:04.592" level="INFO">https://www.jegy.hu/registration/doRegistration</msg>
-<status status="PASS" starttime="20190106 17:58:04.592" endtime="20190106 17:58:04.592"></status>
+<msg timestamp="20190106 18:08:36.210" level="INFO">https://www.jegy.hu/registration/doRegistration</msg>
+<status status="PASS" starttime="20190106 18:08:36.210" endtime="20190106 18:08:36.210"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -158,11 +158,11 @@
 <arg>${c}</arg>
 <arg>${d}</arg>
 </arguments>
-<status status="PASS" starttime="20190106 17:58:04.593" endtime="20190106 17:58:04.593"></status>
+<status status="PASS" starttime="20190106 18:08:36.211" endtime="20190106 18:08:36.212"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:04.579" endtime="20190106 17:58:04.593"></status>
+<status status="PASS" starttime="20190106 18:08:36.198" endtime="20190106 18:08:36.213"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:04.579" endtime="20190106 17:58:04.593"></status>
+<status status="PASS" starttime="20190106 18:08:36.198" endtime="20190106 18:08:36.213"></status>
 </kw>
 <kw name="Check &quot;Sikertelen&quot; Text" library="register_page">
 <kw name="Element Text Should Be" library="SeleniumLibrary">
@@ -171,10 +171,10 @@
 <arg>${REGISTER_PAGE_SIKERTELEN_ID}</arg>
 <arg>${REGISTER_PAGE_SIKERTELEN_TEXT}</arg>
 </arguments>
-<msg timestamp="20190106 17:58:04.596" level="INFO">Verifying element 'css=body &gt; div.jegyhu_main.container &gt; div.row &gt; div &gt; h1' contains exact text 'Sikertelen regisztráció'.</msg>
-<status status="PASS" starttime="20190106 17:58:04.595" endtime="20190106 17:58:04.645"></status>
+<msg timestamp="20190106 18:08:36.215" level="INFO">Verifying element 'css=body &gt; div.jegyhu_main.container &gt; div.row &gt; div &gt; h1' contains exact text 'Sikertelen regisztráció'.</msg>
+<status status="PASS" starttime="20190106 18:08:36.214" endtime="20190106 18:08:36.279"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:04.593" endtime="20190106 17:58:04.645"></status>
+<status status="PASS" starttime="20190106 18:08:36.213" endtime="20190106 18:08:36.279"></status>
 </kw>
 <kw name="Check Main Error Text" library="register_page">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -185,8 +185,8 @@
 <assign>
 <var>${szoveg}</var>
 </assign>
-<msg timestamp="20190106 17:58:04.709" level="INFO">${szoveg} = A jelszó formátuma(jelszó erőssége) nem megfelelő! A Jelszónak legalább nyolc karakter hosszúságúnak kell lenni és kis-, nagybetűket, valamint számjegyet kell tartalmazni. Kérjük, adjon meg új, megfel...</msg>
-<status status="PASS" starttime="20190106 17:58:04.646" endtime="20190106 17:58:04.709"></status>
+<msg timestamp="20190106 18:08:36.324" level="INFO">${szoveg} = A jelszó formátuma(jelszó erőssége) nem megfelelő! A Jelszónak legalább nyolc karakter hosszúságúnak kell lenni és kis-, nagybetűket, valamint számjegyet kell tartalmazni. Kérjük, adjon meg új, megfel...</msg>
+<status status="PASS" starttime="20190106 18:08:36.280" endtime="20190106 18:08:36.324"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -194,26 +194,26 @@
 <arg>${szoveg}</arg>
 <arg>${REGISTER_PAGE_ERROR_TEXT_HOSZU_PASSWORD}</arg>
 </arguments>
-<status status="PASS" starttime="20190106 17:58:04.710" endtime="20190106 17:58:04.710"></status>
+<status status="PASS" starttime="20190106 18:08:36.325" endtime="20190106 18:08:36.325"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${szoveg}</arg>
 </arguments>
-<msg timestamp="20190106 17:58:04.710" level="INFO">A jelszó formátuma(jelszó erőssége) nem megfelelő! A Jelszónak legalább nyolc karakter hosszúságúnak kell lenni és kis-, nagybetűket, valamint számjegyet kell tartalmazni. Kérjük, adjon meg új, megfelelő jelszót! Köszönjük!</msg>
-<status status="PASS" starttime="20190106 17:58:04.710" endtime="20190106 17:58:04.710"></status>
+<msg timestamp="20190106 18:08:36.327" level="INFO">A jelszó formátuma(jelszó erőssége) nem megfelelő! A Jelszónak legalább nyolc karakter hosszúságúnak kell lenni és kis-, nagybetűket, valamint számjegyet kell tartalmazni. Kérjük, adjon meg új, megfelelő jelszót! Köszönjük!</msg>
+<status status="PASS" starttime="20190106 18:08:36.325" endtime="20190106 18:08:36.327"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:04.646" endtime="20190106 17:58:04.710"></status>
+<status status="PASS" starttime="20190106 18:08:36.280" endtime="20190106 18:08:36.327"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:04.578" endtime="20190106 17:58:04.710"></status>
+<status status="PASS" starttime="20190106 18:08:36.197" endtime="20190106 18:08:36.327"></status>
 </kw>
 <kw name="End web test" library="Common" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190106 17:58:04.710" endtime="20190106 17:58:07.057"></status>
+<status status="PASS" starttime="20190106 18:08:36.328" endtime="20190106 18:08:38.629"></status>
 </kw>
-<status status="PASS" starttime="20190106 17:58:04.710" endtime="20190106 17:58:07.057"></status>
+<status status="PASS" starttime="20190106 18:08:36.328" endtime="20190106 18:08:38.630"></status>
 </kw>
 <doc>Regisztráció olyan jelszóval ami minimum 8 karakter, de csak sóbetűt tartalmaz.</doc>
 <tags>
@@ -221,10 +221,10 @@
 <tag>Mo3</tag>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" starttime="20190106 17:57:51.409" endtime="20190106 17:58:07.058" critical="yes"></status>
+<status status="PASS" starttime="20190106 18:08:24.108" endtime="20190106 18:08:38.631" critical="yes"></status>
 </test>
 <doc>A regisztrációhoz kapcsolódó tesztesetek</doc>
-<status status="PASS" starttime="20190106 17:57:51.089" endtime="20190106 17:58:07.067"></status>
+<status status="PASS" starttime="20190106 18:08:23.833" endtime="20190106 18:08:38.639"></status>
 </suite>
 <statistics>
 <total>
