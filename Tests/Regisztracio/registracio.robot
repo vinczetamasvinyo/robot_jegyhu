@@ -41,15 +41,15 @@ Regisztracio rossz jelszo - csak szam
     Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_SZAM}
     Check thinks after give wrong password
 
-Regisztracio rossz jelszo - csak betu
+Regisztracio rossz jelszo - csak kisbetu
     [Documentation]  Regisztráció olyan jelszóval ami minimum 8 karakter, de csak sóbetűt tartalmaz.
-    [Tags]  Smoke  Jelszo  Mo3
+    [Tags]  Smoke  Jelszo
     cookie.Accept cookie2
     Main page click login
     Go to registration
     Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_BETU}
     Check thinks after give wrong password
-
+           
 Test1
     [Tags]  Most2
     ${a} =  add two string  Vincze  Tamás

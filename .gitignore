@@ -1,4 +1,4 @@
-log.html
-output.xml
-report.xml
+results/log.html
+results/output.xml
+results/report.xml
 valami.txt
