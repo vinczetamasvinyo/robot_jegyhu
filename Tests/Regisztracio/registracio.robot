@@ -20,7 +20,7 @@ ${REGISTRACIO_ROV_JELSZO} =  aaa
 ${REGISTRACIO_JELSZO_CSAK_SZAM} =  12345678
 ${REGISTRACIO_JELSZO_CSAK_KISBETU} =  asdfghjkl
 ${REGISTRACIO_JELSZO_CSAK_NAGYBETU} =  ASDFGHJKL
-
+${REGISTRACIO_JELSZO_CSAK_NAGYKISBETU} =  ASDFGHJKL1
 *** Test Cases ***
 Regisztracio rovid jelszo
     [Documentation]  Regisztráció olyan jelszóval ami rövidebb mind 8 hosszú
@@ -52,13 +52,21 @@ Regisztracio rossz jelszo - csak Nagybetu
 
 Regisztracio rossz jelszo - csak kisbetu
     [Documentation]  Regisztráció olyan jelszóval ami minimum 8 karakter, de csak kisbetűt tartalmaz.
-    [Tags]  Smoke  Jelszo2
+    [Tags]  Smoke  Jelszo
     cookie.Accept cookie2
     Main page click login
     Go to registration
     Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_KISBETU}
     Check thinks after give wrong password
 
+Regisztracio rossz jelszo - csak kis es nagybetu
+    [Documentation]  Regisztráció olyan jelszóval ami minimum 8 karakter, de csak kis és nagybetűt tartalmaz.
+    [Tags]  Smoke  Jelszo
+    cookie.Accept cookie2
+    Main page click login
+    Go to registration
+    Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_NAGYKISBETU}
+    Check thinks after give wrong password
 
 Test1
     [Tags]  Most2
