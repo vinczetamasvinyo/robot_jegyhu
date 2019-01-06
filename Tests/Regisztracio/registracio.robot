@@ -82,7 +82,7 @@ Regisztracio rossz jelszo - csak kisbetu es szam
 
 Regisztracio rossz jelszo - csak nagybetu es szam
     [Documentation]  Regisztráció olyan jelszóval ami minimum 8 karakter, de csak Nagybetűt és számot tartalmaz.
-    [Tags]  Smoke  Jelszo2
+    [Tags]  Smoke  Jelszo
     cookie.Accept cookie2
     Main page click login
     Go to registration
