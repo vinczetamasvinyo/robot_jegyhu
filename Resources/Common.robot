@@ -28,3 +28,10 @@ Check Page Url
     ${c} =  get location
     Log  ${c}
     should be equal as strings  ${c}  ${d}
+
+Scroll to element
+    [Arguments]  ${element}  ${y}
+    ${x} =  get vertical position  ${element}
+    ${x2} =  windows scroll  ${x}  ${y}
+    log  ${x2}
+    Execute JavaScript  ${x2}

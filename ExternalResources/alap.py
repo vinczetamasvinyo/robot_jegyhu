@@ -13,4 +13,9 @@ def egyenlo2(a, b):
 def osszead_string(a, b):
     return a+b
 
-print(osszead_string('valami', 'valami2'))
+def windows_scroll(y,y2):
+    if type(y2) == str:
+        y3 = int(y2)
+    else:
+        y3 = y2
+    return "window.scrollTo(0," + str(y-(y3))+")"
