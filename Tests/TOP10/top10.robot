@@ -12,6 +12,7 @@ ${OLDAL} =  https://www.jegy.hu/
 ${BROWSER} =  chrome
 ${TOP10_LABEL_SZINHAZ} =  Színház
 ${TOP10_LABEL_KONCERT_ZENE} =  Koncert, zene
+${TOP10_LABEL_FESZTIVAL} =  Fesztivál
 
 *** Test Cases ***
 Top10 Szinhaz megnezese
@@ -26,6 +27,14 @@ Top10 koncert zene
     cookie.Accept cookie2
     top10.Scroll to top10 element
     top10.Select top10 list by label  ${TOP10_LABEL_SZINHAZ}
+    top10.Check elements of Top10
+
+Top10 fesztival
+    [Documentation]  Főoldalon a Top10 fesztival megnézése
+    [Tags]  smoke
+    cookie.Accept cookie2
+    top10.Scroll to top10 element
+    top10.Select top10 list by label  ${TOP10_LABEL_FESZTIVAL}
     top10.Check elements of Top10
 
 
