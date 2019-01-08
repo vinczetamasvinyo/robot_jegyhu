@@ -14,6 +14,8 @@ Scroll to top10 element
 Select top10 list by label
     [Arguments]  ${label}
     Select list by label  ${label}
+    Sleep  1s
+    Wait appear top10 box
 
 Check elements of Top10
     ${top10} =  Count top10

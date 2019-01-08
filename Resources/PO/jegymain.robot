@@ -9,6 +9,9 @@ ${JEGYMAIN_TOP10_UP_ID} =  class=up
 ${JEGYMAIN_TOP10_DOWN_ID} =  class=down
 
 *** Keywords ***
+Wait appear top10 box
+    WAIT UNTIL PAGE CONTAINS ELEMENT  ${JEGYMAIN_BOX}
+
 Scroll top10
     [Arguments]  ${kivonszam}
     scroll to element  ${JEGYMAIN_TOP10_VALASZTO}  ${kivonszam}
