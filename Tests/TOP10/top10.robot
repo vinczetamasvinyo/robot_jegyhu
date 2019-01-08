@@ -14,6 +14,7 @@ ${TOP10_LABEL_SZINHAZ} =  Színház
 ${TOP10_LABEL_KONCERT_ZENE} =  Koncert, zene
 ${TOP10_LABEL_FESZTIVAL} =  Fesztivál
 ${TOP10_LABEL_MUSEUM} =  Múzeum, kiállítás
+${TOP10_LABEL_OSSZES} =  Összes kategória
 
 *** Test Cases ***
 Top10 Szinhaz megnezese
@@ -44,6 +45,16 @@ Top10 muzeum
     cookie.Accept cookie2
     top10.Scroll to top10 element
     top10.Select top10 list by label  ${TOP10_LABEL_MUSEUM}
+    top10.Check elements of Top10
+
+Top10 osszes kategoria valtoztatasos
+    [Documentation]  Főoldalon a Top10 összes kategória megnézése miután átváltunk egy másik
+    [Tags]  smoke
+    cookie.Accept cookie2
+    top10.Scroll to top10 element
+    top10.Select top10 list by label  ${TOP10_LABEL_MUSEUM}
+    top10.Check elements of Top10
+    top10.Select top10 list by label  ${TOP10_LABEL_OSSZES}
     top10.Check elements of Top10
 
 *** Keywords ***
