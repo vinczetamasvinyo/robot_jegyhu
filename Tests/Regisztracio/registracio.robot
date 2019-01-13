@@ -23,6 +23,7 @@ ${REGISTRACIO_JELSZO_CSAK_NAGYBETU} =  ASDFGHJKL
 ${REGISTRACIO_JELSZO_CSAK_NAGYKISBETU} =  ASDFGHJKL1
 ${REGISTRACIO_JELSZO_CSAK_KISBETUSZAM} =  asdfghjkl2
 ${REGISTRACIO_JELSZO_CSAK_NAGYBETUSZAM} =  ASDFGHJKL2
+${REGISTRACIO_JELSZO_KAMU_FIOK} =  Vinyo123456
 
 *** Test Cases ***
 Regisztracio rovid jelszo
@@ -89,6 +90,18 @@ Regisztracio rossz jelszo - csak nagybetu es szam
     Give reg data and click  ${REGISTRACIO_EMAIL}  ${REGISTRACIO_JELSZO_CSAK_NAGYBETUSZAM}
     Check thinks after give wrong password
 
+Registracio kamu email cimmel funkcionalis test
+    [Documentation]  A teszt során egy kamu email címel regisztrációlunk a folyamat teljes mértékig végigmegy.
+                ...  Funkcionális tesztről van szó.
+    [Tags]  smoke
+    cookie.Accept cookie2
+    log.Main page click login
+    registracio.Go to registration
+    @{lista}  ${email} =  registracio.Take reg email from temp-mail page
+    Continue the registration  @{lista}[0]  ${email}  ${REGISTRACIO_JELSZO_KAMU_FIOK}
+    Comfirm the registration via reg email  @{lista}[1]
+    login into jegyhu   ${email}    ${REGISTRACIO_JELSZO_KAMU_FIOK}
+    Check the login is succes or not  ${email}
 
 Test1
     [Tags]  Most2
