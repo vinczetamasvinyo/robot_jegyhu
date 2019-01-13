@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4f3818d-60ea-4001-9466-828bb1bcd8e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Resources/PO/tempmail.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/PO/register_page.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/PO/register_page.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/registracio.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/registracio.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/Regisztracio/registracio.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Regisztracio/registracio.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-    </list>
+    <list default="true" id="f4f3818d-60ea-4001-9466-828bb1bcd8e0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
     <option name="width" value="1943" />
@@ -434,10 +426,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2281399" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2281399" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -448,7 +439,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49841017" visible="true" weight="0.2758007" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49841017" visible="true" weight="0.2758007" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50158983" side_tool="true" weight="0.4644128" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32740214" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
